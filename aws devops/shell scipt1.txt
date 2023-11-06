@@ -1,0 +1,31 @@
+#!/bin/bash
+
+###########################
+########AUTHOR : PRACHI
+# DATE: 6th Nov
+#
+#Version: v1
+#
+#this scipt will report the aws resoucre usage
+#################################
+
+#AWS S3
+# AWS EC2
+#AWS LAMBDA
+#AWS IAM USERS
+
+set -x
+
+#list s3 buckets
+echo "print list of s3 buckets"
+aws s3 ls
+#list ec2 instances
+echo "print list of ec2 instances"
+aws ec2 describe-instances
+# list lambda function
+echo "print list oflambda"
+aws lambda list-functions
+#list iam users
+echo "print list iam users"
+aws iam list-users
+

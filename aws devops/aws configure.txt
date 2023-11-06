@@ -1,0 +1,22 @@
+ubuntu@ip-172-31-27-66:~$ aws configure
+AWS Access Key ID [****************OJPY]: AKIA4E3FRK2DMMCWOJPY
+AWS Secret Access Key [****************gb9O]: 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
+Default region name [eu-north-1]:
+Default output format [None]:
+ubuntu@ip-172-31-27-66:~$ aws ec2 describe-instances
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0fe8bec493a81c7da",
+                    "InstanceId": "i-04437ff9a42484943",
+                    "InstanceType": "t3.micro",
+                    "KeyName": "test111",
+                    "LaunchTime": "2023-11-06T02:21:41.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
